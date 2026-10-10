@@ -83,7 +83,8 @@
 
 | Skill | 功能 | 命令示例 |
 |-------|------|---------|
-| `idea-discovery` | 📚 发现研究方向，分析论文文献 | `/idea-discovery "LLM推理加速"` |
+ | `init` | 🚀 初始化本地项目，配置远程 SSH | `/init my-project --remote_server gpu` |
+ | `idea-discovery` | 📚 发现研究方向，分析论文文献 | `/idea-discovery "LLM推理加速"` |
 | `research-refine` | 📖 细化研究问题，迭代方法改进 | `/research-refine "问题:延迟高 | 方法:投机解码"` |
 | `experiment-plan` | 📋 制定详细实验路线图 | `/experiment-plan` |
 | `experiment-bridge` | 💻 实现代码并部署到 GPU | `/experiment-bridge` |
