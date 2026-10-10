@@ -23,8 +23,7 @@
 | 📄 **论文智能分析** | 自动爬取、分析论文，发现研究创新方向 |
 | 🔬 **实验全生命周期** | 初始化 → 运行 → 监控 → 收集 → 清理 |
 | 📊 **结果自动评审** | 分析实验结果，生成改进建议 |
-| 📝 **论文写作辅助** | 自动生成论文大纲和正文 |
-
+ | 🎯 **一键端到端** | 一条命令完成从 idea 到 paper 的完整研究流程 |
 ---
 
 ## 🔄 工作流程
@@ -83,7 +82,7 @@
 
 | Skill | 功能 | 命令示例 |
 |-------|------|---------|
- | `init` | 🚀 初始化本地项目，配置远程 SSH | `/init my-project --remote_server gpu` |
+ | `research` | 🎯 **一键端到端研究** | `/research "LLM推理加速"` |
  | `idea-discovery` | 📚 发现研究方向，分析论文文献 | `/idea-discovery "LLM推理加速"` |
 | `research-refine` | 📖 细化研究问题，迭代方法改进 | `/research-refine "问题:延迟高 | 方法:投机解码"` |
 | `experiment-plan` | 📋 制定详细实验路线图 | `/experiment-plan` |
@@ -98,7 +97,33 @@
 | `paper-plan` | 📑 生成论文大纲 | `/paper-plan` |
 | `paper-write` | ✍️ 撰写论文正文 | `/paper-write` |
 | `paper-figure` | 📊 生成论文图表 | `/paper-figure` |
-
+ ---
+ 
+ ## 🎯 一键端到端研究
+ 
+ 只需一条命令，自动完成从研究方向发现到论文写作的完整流程：
+ 
+ ```bash
+ /research "LLM推理加速"
+ ```
+ 
+ **完整流程 (7 阶段)**:
+ 
+ ```
+ 🎯 Idea Discovery → 📖 Research Refine → 📋 Experiment Plan → 💻 Experiment Bridge
+         ↓
+ ⚡ PI SSH Experiment (init → run → monitor → collect)
+         ↓
+ 🔄 Auto Review Loop → 📄 Paper Write
+ ```
+ 
+ **执行模式**:
+ - `full` - 完整流程（含实验）
+ - `idea_only` - 仅发现方向  
+ - `paper_only` - 仅论文写作
+ - `--auto_experiment false` - 无实验模式
+ 
+ ---
 ---
 
 ## 🚀 快速开始
